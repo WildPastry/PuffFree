@@ -19,6 +19,7 @@ import { IReflection } from '../types/data.types';
 import getDeviceSize from '../constants/Layout';
 import useColorScheme from '../hooks/useColorScheme';
 import { useFocusEffect } from '@react-navigation/native';
+import ShareComponent from './Share';
 
 const Reflection: React.FC<IReflectionComponent> = ({
   handleScrollPosition
@@ -200,6 +201,7 @@ const Reflection: React.FC<IReflectionComponent> = ({
           <Text style={[styles.text, Control[deviceSize].text]}>
             {reflection.reflection}
           </Text>
+          <ShareComponent />
         </View>
       )}
     </View>
