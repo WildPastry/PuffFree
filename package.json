@@ -19,7 +19,9 @@
     "submit:android": "eas submit -p android",
     "submit:ios": "eas submit -p ios",
     "test": "jest -u",
-    "update": "eas update --branch develop"
+    "update": "eas update --branch develop",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
