@@ -43,6 +43,23 @@
     "owner": "wildpastry",
     "runtimeVersion": {
       "policy": "sdkVersion"
-    }
+    },
+    "plugins": [
+    [
+      "react-native-share",
+      {
+        "ios": [
+          "fb",
+          "instagram",
+          "twitter"
+        ],
+        "android": [
+          "com.facebook.katana",
+          "com.instagram.android",
+          "com.twitter.android"
+        ]
+      }
+    ]
+  ]
   }
 }
