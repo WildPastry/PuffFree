@@ -1,6 +1,6 @@
-import { Button, Share, View } from 'react-native';
+import { Button, View } from 'react-native';
 import React from 'react';
-// import Share from 'react-native-share';
+import Share from 'react-native-share';
 
 const ShareComponent = () => {
   const shareMessage = async () => {
@@ -10,7 +10,7 @@ const ShareComponent = () => {
     };
 
     try {
-      await Share.share(options);
+      await Share.open(options);
     } catch (error) {
       console.log('Error =>', error);
     }
